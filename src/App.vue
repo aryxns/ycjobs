@@ -8,8 +8,8 @@
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
-import Jobs from './components/Jobs.vue'
+// import HelloWorld from './HelloWorld.vue'
+import Jobs from './Jobs.vue'
 
 export default {
   name: 'App',
