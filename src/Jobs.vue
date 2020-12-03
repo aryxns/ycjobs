@@ -52,7 +52,7 @@ export default {
 
     methods: {
         getSearch: function() {
-            axios.post('https://flask-app-now.herokuapp.com/main', {
+            axios.post('https://yc-jobs-api.herokuapp.com/main', {
                 search: this.search
             }).then(response => {
                 this.posts = response.data
@@ -63,7 +63,7 @@ export default {
             window.open(url)
         },
         getPosts: function() {
-             axios.get('https://flask-app-now.herokuapp.com/main').then(response => {
+             axios.get('https://yc-jobs-api.herokuapp.com/main').then(response => {
                 this.posts = response.data
                 console.log(response.data) 
             })
