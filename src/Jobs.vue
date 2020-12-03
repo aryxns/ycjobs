@@ -53,7 +53,6 @@ export default {
     methods: {
         getSearch: function() {
             axios.post('https://rha02f.deta.dev/posts', {
-                withCredentials: true,
                 search: this.search
             }).then(response => {
                 this.posts = response.data
