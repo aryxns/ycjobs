@@ -53,6 +53,7 @@ export default {
     methods: {
         getSearch: function() {
             axios.post('https://aryxns-ycapi.zeet.app/posts', {
+	    	withCredentials: true,
                 search: this.search
             }).then(response => {
                 this.posts = response.data
