@@ -52,7 +52,7 @@ export default {
 
     methods: {
         getSearch: function() {
-            axios.post('https://aryxns-ycapi.zeet.app/posts', {
+            axios.post('https://rha02f.deta.dev/posts', {
 	    	withCredentials: true,
                 search: this.search
             }).then(response => {
@@ -64,7 +64,7 @@ export default {
             window.open(url)
         },
         getPosts: function() {
-             axios.get('https://aryxns-ycapi.zeet.app/posts').then(response => {
+             axios.get('https://rha02f.deta.dev/posts').then(response => {
                 this.posts = response.data
                 console.log(response.data) 
             })
