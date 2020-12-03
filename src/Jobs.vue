@@ -63,7 +63,7 @@ export default {
             window.open(url)
         },
         getPosts: function() {
-             axios.get('https://rha02f.deta.dev/posts').then(response => {
+             axios.get('https://z15t8b.deta.dev/posts').then(response => {
                 this.posts = response.data
                 console.log(response.data) 
             })
